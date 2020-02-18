@@ -3,7 +3,7 @@ Playing with graphql apollo client cache (add, update, remove).
 Server:
 From server directory
 ```
->node server.js
+> node server.js
 ```
 
 Client:
