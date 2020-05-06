@@ -12,6 +12,7 @@ import { ListComponentComponent } from './list-component/list-component.componen
 import { AddToListComponentComponent } from './add-to-list-component/add-to-list-component.component';
 import { RemoveItemComponentComponent } from './remove-item-component/remove-item-component.component';
 import { UpdateItemComponentComponent } from './update-item-component/update-item-component.component';
+import { CarInfoComponent } from './car-info/car-info.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { UpdateItemComponentComponent } from './update-item-component/update-ite
     ListComponentComponent,
     AddToListComponentComponent,
     RemoveItemComponentComponent,
-    UpdateItemComponentComponent
+    UpdateItemComponentComponent,
+    CarInfoComponent
   ],
   imports: [BrowserModule, AppRoutingModule, GraphQLModule, HttpClientModule],
   providers: [],

@@ -1,0 +1,15 @@
+<p>
+  <button (click)="getCar()">Get car</button>
+  <button (click)="getCarType()">Get car type</button>
+  <button (click)="getCarSeller()">Get car seller</button>
+  <button (click)="getCarEquipment()">Get car equipment</button>
+  <button (click)="getCarColor()">Get car color</button>
+</p>
+<p>
+  <span>New color: </span>
+  <input type="text" (change)="onColorChange($event.target.value)" />
+  <button (click)="changeColor()">Change</button>
+</p>
+
+<p>CAR DATA:</p>
+<div [innerHtml]="carData"></div>
