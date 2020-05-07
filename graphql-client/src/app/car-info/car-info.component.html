@@ -4,6 +4,9 @@
   <button (click)="getCarSeller()">Get car seller</button>
   <button (click)="getCarEquipment()">Get car equipment</button>
   <button (click)="getCarColor()">Get car color</button>
+  <button (click)="writeFragment()">Make car color pink</button>
+  <button (click)="getUserBasic()">Get user basic</button>
+  <button (click)="getUserWithEquipment()">Get user with equipment</button>
 </p>
 <p>
   <span>New color: </span>
@@ -13,3 +16,6 @@
 
 <p>CAR DATA:</p>
 <div [innerHtml]="carData"></div>
+
+<p>USER DATA:</p>
+<div [innerHtml]="userData"></div>

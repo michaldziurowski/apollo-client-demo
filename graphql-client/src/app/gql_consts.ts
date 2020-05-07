@@ -126,6 +126,41 @@ export const GET_CAR = gql`
   }
 `;
 
+export const GET_USER_BASIC = gql`
+  {
+    user {
+      id
+      firstName
+      lastName
+      car {
+        id
+        make
+        model
+        year
+        color
+      }
+    }
+  }
+`;
+
+export const GET_USER_WITH_EQUIPMENT = gql`
+  {
+    user {
+      id
+      firstName
+      lastName
+      car {
+        id
+        make
+        model
+        year
+        hasAirbags
+        is4x4
+      }
+    }
+  }
+`;
+
 export const UPDATE_ELEMENT = gql`
   mutation UpdateElement($id: String, $newName: String) {
     updateElement(id: $id, newName: $newName) {

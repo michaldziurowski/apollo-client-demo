@@ -29,10 +29,18 @@ const typeDefs = gql`
     sellerAddr: String
   }
 
+  type User {
+    id: String
+    firstName: String
+    lastName: String
+    car: Car
+  }
+
   type Query {
     hello: HelloTxt
     list: [ListElement]!
     car: Car
+    user: User
   }
 
   type Mutation {
@@ -60,11 +68,19 @@ let car = {
   sellerAddr: "Wloclawek obok castoramy",
 };
 
+let user = {
+  id: "usr-1",
+  firstName: "Michal",
+  lastName: "Dziurowski",
+  car,
+};
+
 const resolvers = {
   Query: {
     hello: () => ({ id: "123", txt: hello, otherTxt: { txt: hello } }),
     list: () => listElements,
     car: () => car,
+    user: () => user,
   },
   Mutation: {
     setHello: () => {
